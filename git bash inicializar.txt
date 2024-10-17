@@ -1,0 +1,376 @@
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash
+$ nano a1.txt
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash
+$ git init
+Initialized empty Git repository in E:/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash/.git/
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (master)
+$ git add .
+warning: in the working copy of 'a1.txt', LF will be replaced by CRLF the next time Git touches it
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a1.txt
+
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (master)
+$ git branch
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a1.txt
+
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (master)
+$ git commit -m "primer commit"
+[master (root-commit) fa7e0de] primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a1.txt
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (master)
+$ git branch -M main
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote add origin ^[[200~https://github.com/laiashelley/git_bash_plantilla.git~
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git push -u origin main
+fatal: protocol '?[200~https' is not supported
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote add origin https://github.com/laiashelley/git_bash_plantilla.git
+error: remote origin already exists.
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git push -u origin main
+fatal: protocol '?[200~https' is not supported
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote add origin https://github.com/laiashelley/git_bash_plantillaa.git
+error: remote origin already exists.
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote remove origin
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote add origin ^C
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ ^C
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote remove origin
+error: No such remote: 'origin'
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote origin2 https://github.com/laiashelley/git_bash_plantilla.git
+error: unknown subcommand: `origin2'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remove origin
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote add origin2 https://github.com/laiashelley/git_bash_plantilla.git
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote
+origin2
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote rename origin2 origin
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git remote
+origin
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 246 bytes | 82.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/laiashelley/git_bash_plantilla.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git branch rama2
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git branch
+* main
+  rama2
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git checkout rama2
+Switched to branch 'rama2'
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (rama2)
+$ git branch
+  main
+* rama2
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (rama2)
+$ nano a1.txt
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (rama2)
+$ git diff
+warning: in the working copy of 'a1.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/a1.txt b/a1.txt
+index 2d9b695..482bf3f 100644
+--- a/a1.txt
++++ b/a1.txt
+@@ -1 +1,4 @@
+ Hola mundo
++
++
++Probando a escribir desde rama 2
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (rama2)
+$ git checkout main
+Switched to branch 'main'
+M       a1.txt
+Your branch is up to date with 'origin/main'.
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ nano a1.text
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git merge rama2
+Already up to date.
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git checkout rama2
+Switched to branch 'rama2'
+M       a1.txt
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (rama2)
+$ git add .
+warning: in the working copy of 'a1.txt', LF will be replaced by CRLF the next time Git touches it
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (rama2)
+$ git commit -m "des de rama2"
+[rama2 d0109bf] des de rama2
+ 1 file changed, 3 insertions(+)
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (rama2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git show
+commit fa7e0de1349dd1cf9685094ae0a2bc7d4236f804 (HEAD -> main, origin/main)
+Author: Laia Galvez Bach <101476844+laiashelley@users.noreply.github.com>
+Date:   Thu Oct 17 18:48:35 2024 +0200
+
+    primer commit
+
+diff --git a/a1.txt b/a1.txt
+new file mode 100644
+index 0000000..2d9b695
+--- /dev/null
++++ b/a1.txt
+@@ -0,0 +1 @@
++Hola mundo
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git diff
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git checkout rama2
+Switched to branch 'rama2'
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (rama2)
+$ git show
+commit d0109bf598d2622e78d19add1115620f1f71aab9 (HEAD -> rama2)
+Author: Laia Galvez Bach <101476844+laiashelley@users.noreply.github.com>
+Date:   Thu Oct 17 19:15:04 2024 +0200
+
+    des de rama2
+
+diff --git a/a1.txt b/a1.txt
+index 2d9b695..482bf3f 100644
+--- a/a1.txt
++++ b/a1.txt
+@@ -1 +1,4 @@
+ Hola mundo
++
++
++Probando a escribir desde rama 2
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (rama2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git merge rama2
+Updating fa7e0de..d0109bf
+Fast-forward
+ a1.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git show
+commit d0109bf598d2622e78d19add1115620f1f71aab9 (HEAD -> main, rama2)
+Author: Laia Galvez Bach <101476844+laiashelley@users.noreply.github.com>
+Date:   Thu Oct 17 19:15:04 2024 +0200
+
+    des de rama2
+
+diff --git a/a1.txt b/a1.txt
+index 2d9b695..482bf3f 100644
+--- a/a1.txt
++++ b/a1.txt
+@@ -1 +1,4 @@
+ Hola mundo
++
++
++Probando a escribir desde rama 2
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/laiashelley/git_bash_plantilla.git
+   fa7e0de..d0109bf  main -> main
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git branch
+* main
+  rama2
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git branch -d rama2
+Deleted branch rama2 (was d0109bf).
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git branch
+* main
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git log --online
+fatal: unrecognized argument: --online
+
+galve@TWindows-Laia MINGW64 /e/Escritorio/Ironhack/Pruebas/modulo 3/examen-modulo-3-plantillas/plantillas-git-gitbash/planti-gitbash (main)
+$ git log --oneline
+d0109bf (HEAD -> main, origin/main) des de rama2
+fa7e0de primer commit

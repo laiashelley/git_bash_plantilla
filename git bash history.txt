@@ -1,0 +1,50 @@
+ 7  git status
+    8  git commit -m "primer commit"
+    9  git status
+   10  git branch -M main
+   11  git status
+   12  git remote add origin https://github.com/laiashelley/git_bash_plantilla.git~
+   13  git push -u origin main
+   14  git remote add origin https://github.com/laiashelley/git_bash_plantilla.git
+   15  git push -u origin main
+   16  git status
+   17  git remote add origin https://github.com/laiashelley/git_bash_plantillaa.git
+   18  git remote remove origin
+   19  git remote remove origin
+   20  git remote origin2 https://github.com/laiashelley/git_bash_plantilla.git
+   21  git remove origin
+   22  git remote add origin2 https://github.com/laiashelley/git_bash_plantilla.git
+   23  git remote
+   24  git remote rename origin2 origin
+   25  git remote
+   26  git push -u origin main
+   27  git branch rama2
+   28  git status
+   29  git branch
+   30  git checkout rama2
+   31  git branch
+   32  nano a1.txt
+   33  git diff
+   34  git checkout main
+   35  git status
+   36  nano a1.text
+   37  git status
+   38  git merge rama2
+   39  git status
+   40  git checkout rama2
+   41  git add .
+   42  git commit -m "des de rama2"
+   43  git checkout main
+   44  git show
+   45  git diff
+   46  git checkout rama2
+   47  git show
+   48  git checkout main
+   49  git merge rama2
+   50  git show
+   51  git status
+   52  git push
+   53  git branch
+   54  git branch -d rama2
+   55  git branch
+   56  history 50
